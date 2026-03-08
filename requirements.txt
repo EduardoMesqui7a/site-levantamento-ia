@@ -1,0 +1,6 @@
+with tab1:
+    if preview_img is not None:
+        st.image(preview_img, use_container_width=True)
+    else:
+        st.warning("Nenhum polígono fechado candidato foi encontrado para renderização.")
+    st.write(ai_result["summary"])
